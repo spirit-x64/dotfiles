@@ -1,4 +1,4 @@
-set nu
+set relativenumber
 set ruler
 set laststatus=2
 
