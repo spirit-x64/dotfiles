@@ -7,7 +7,7 @@ if has("syntax")
 	syntax on
 endif
 
-map <C-n> :set invnumber<CR>
+map <C-n> :set invrelativenumber<CR>
 nnoremap <leader>f gg=G
 
 nnoremap J :m .+1<CR>==
