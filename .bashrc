@@ -8,6 +8,9 @@ PS1='[\u@\h \W]\$ '
 # Infinite history
 HISTSIZE= HISTFILESIZE= 
 
+# Auto cd
+shopt -s autocd
+
 export PATH=$PATH:$HOME/.local/bin
 
 source $HOME/.bash_aliases
