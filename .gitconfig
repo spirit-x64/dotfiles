@@ -1,0 +1,11 @@
+[user]
+	name = Spirit
+	email = i8bou3@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[credential]
+	helper = store
+[github]
+	user = 8bou3
