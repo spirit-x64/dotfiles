@@ -5,6 +5,9 @@
 
 PS1='[\u@\h \W]\$ '
 
+# Infinite history
+HISTSIZE= HISTFILESIZE= 
+
 export PATH=$PATH:$HOME/.local/bin
 
 source $HOME/.bash_aliases
