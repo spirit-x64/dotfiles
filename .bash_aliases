@@ -33,8 +33,8 @@ alias shutdown='sudo /usr/bin/shutdown'
 
 # Git
 alias gs='git status'
-alias gl='git log --graph --oneline --decorate'
-alias gc='git commit -m'
+alias glog='git log --graph --oneline --decorate'
+alias commit='git commit -m'
 alias add='git add'
 alias pull='git pull --verbose'
 alias push='git push --verbose'
