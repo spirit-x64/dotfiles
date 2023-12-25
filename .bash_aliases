@@ -22,7 +22,7 @@ alias la='ls -A'
 alias ll='ls -la'
 alias l.='ls -d .*'
 alias tree='tree -a -I ".git/"'
-alias mkdir='mkdir -p'
+alias mkdir='mkdir -pv'
 alias rm='rm -I --preserve-root'
 
 # Git
