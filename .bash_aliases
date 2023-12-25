@@ -45,7 +45,7 @@ alias ct='cargo test'
 alias cb='cargo build'
 
 # Julia
-alias julia='julialauncher'
+#alias julia='julialauncher' # just make a symbolic link lazy kid :) 'sudo ln -s /usr/bin/julialauncher /usr/bin/julia'
 alias jt='julia -e "using Pkg; Pkg.activate(pwd()); Pkg.test()"'
 alias jopt='julia --optimize=3 --check-bounds=no --math-mode=fast --threads auto'
 
