@@ -49,6 +49,9 @@ alias cb='cargo build'
 alias jt='julia -e "using Pkg; Pkg.activate(pwd()); Pkg.test()"'
 alias jopt='julia --optimize=3 --check-bounds=no --math-mode=fast --threads auto'
 
+# Python
+alias py='python'
+
 # Monitoring
 alias mem='free -m -l -t'
 alias pmem='ps auxf | sort -nr -k 4'
