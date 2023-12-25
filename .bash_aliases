@@ -25,6 +25,12 @@ alias tree='tree -a -I ".git/"'
 alias mkdir='mkdir -pv'
 alias rm='rm -I --preserve-root'
 
+# Power management
+alias reboot='sudo /usr/bin/reboot'
+alias poweroff='sudo /usr/bin/poweroff'
+alias halt='sudo /usr/bin/halt'
+alias shutdown='sudo /usr/bin/shutdown'
+
 # Git
 alias gs='git status'
 alias gl='git log --graph --oneline --decorate'
