@@ -5,7 +5,9 @@
 	defaultBranch = main
 [pull]
 	rebase = false
-[credential]
-	helper = store
 [github]
 	user = spirit-x64
+[credential]
+	helper = store
+# This is not safe to be in a public server do not do this
+# idk tho my website already sucks who tf gonna hack it
