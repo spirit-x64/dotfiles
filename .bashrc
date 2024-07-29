@@ -1,8 +1,14 @@
 # .bashrc
 
-export PATH=$PATH:$HOME/.local/bin
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+  . /etc/bashrc
+fi
 
-# If not running interactively, don't do anything
+# User specific environment
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+
+# If not running interactively, skip the rest
 [[ $- != *i* ]] && return
 
 PS1='[\u@\h \W]\$ '
