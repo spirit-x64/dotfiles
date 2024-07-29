@@ -25,7 +25,6 @@ alias ll='ls -la'
 alias l.='ls -d .*'
 alias tree='tree -a -I ".git/"'
 alias mkdir='mkdir -pv'
-alias rm='rm -I --preserve-root'
 
 # Power management
 alias reboot='sudo /usr/bin/reboot'
