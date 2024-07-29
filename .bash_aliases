@@ -53,11 +53,5 @@ alias jopt='julia --optimize=3 --check-bounds=no --math-mode=fast --threads auto
 # Python
 alias py='python'
 
-# Monitoring
-alias mem='free -m -l -t'
-alias pmem='ps auxf | sort -nr -k 4'
-alias pcpu='ps auxf | sort -nr -k 3'
-alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/d456ed64c70fd0a1081410505daba3aef3e4fa61/speedtest.py | python3 -'
-
 # SSH for AWS server
 alias aws='sudo ssh -i /path/to/key-file.pem ec2-user@ec2-000-000-000-000.compute-1.amazonaws.com'
