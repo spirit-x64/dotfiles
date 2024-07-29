@@ -4,10 +4,12 @@ alias vi='vim'
 alias wget='wget -c'
 
 # xbps
-alias xu='sudo xbps-install -S; sudo xbps-install -u xbps; sudo xbps-install -u'
-alias xrm='sudo xbps-remove -R'
+alias xi='doas xbps-install -S'
+alias xrs='xbps-query -Rs'
+alias xu='doas xbps-install -S; doas xbps-install -uy xbps; doas xbps-install -u'
+alias xrm='doas xbps-remove -R'
 alias xd='xbps-query -x'
-alias xdr='xbps-query -X'
+alias xD='xbps-query -X'
 
 # Colorize
 alias ls='ls --color=auto'
