@@ -6,7 +6,7 @@
 [init]
 	defaultBranch = main
 [pull]
-	rebase = false
+	rebase = true
 [credential]
 	helper = store
 [github]
