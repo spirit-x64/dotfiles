@@ -27,10 +27,10 @@ alias tree='tree -a -I ".git/"'
 alias mkdir='mkdir -pv'
 
 # Power management
-alias reboot='sudo /usr/bin/reboot'
-alias poweroff='sudo /usr/bin/poweroff'
-alias halt='sudo /usr/bin/halt'
-alias shutdown='sudo /usr/bin/shutdown'
+alias reboot='doas /usr/bin/reboot'
+alias poweroff='doas /usr/bin/poweroff'
+alias halt='doas /usr/bin/halt'
+alias shutdown='doas /usr/bin/shutdown'
 
 # Git
 alias gs='git status'
@@ -46,7 +46,7 @@ alias ct='cargo test'
 alias cb='cargo build'
 
 # Julia
-#alias julia='julialauncher' # just make a symbolic link lazy kid :) 'sudo ln -s /usr/bin/julialauncher /usr/bin/julia'
+#alias julia='julialauncher' # just make a symbolic link lazy kid :) 'doas ln -s /usr/bin/julialauncher /usr/bin/julia'
 alias jt='julia -e "using Pkg; Pkg.activate(pwd()); Pkg.test()"'
 alias jopt='julia --optimize=3 --check-bounds=no --math-mode=fast --threads auto'
 
@@ -54,4 +54,4 @@ alias jopt='julia --optimize=3 --check-bounds=no --math-mode=fast --threads auto
 alias py='python'
 
 # SSH for AWS server
-alias aws='sudo ssh -i /path/to/key-file.pem ec2-user@ec2-000-000-000-000.compute-1.amazonaws.com'
+alias aws='doas ssh -i /path/to/key-file.pem ec2-user@ec2-000-000-000-000.compute-1.amazonaws.com'
