@@ -1,5 +1,3 @@
-[core]
-        editor = code --wait
 [user]
 	name = Spirit
 	email = spirit@programmer.net
