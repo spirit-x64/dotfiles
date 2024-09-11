@@ -47,7 +47,9 @@ alias cb='cargo build'
 
 # Julia
 #alias julia='julialauncher' # just make a symbolic link lazy kid :) 'doas ln -s /usr/bin/julialauncher /usr/bin/julia'
-alias jt='julia -e "using Pkg; Pkg.activate(pwd()); Pkg.test()"'
+alias jt='julia --color=yes --project=@. -e "using Pkg; Pkg.test(); rm(\"./Manifest.toml\")"'
+alias jtold='julia +1.0 --color=yes --project=@. -e "using Pkg; Pkg.test(); rm(\"./Manifest.toml\")"'
+alias jtpre='julia +alpha --color=yes --project=@. -e "using Pkg; Pkg.test(); rm(\"./Manifest.toml\")"'
 alias jopt='julia --optimize=3 --check-bounds=no --math-mode=fast --threads auto'
 
 # Python
