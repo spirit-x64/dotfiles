@@ -24,3 +24,7 @@ alias commit='git commit -m'
 alias add='git add'
 alias pull='git pull --verbose'
 alias push='git push --verbose'
+
+# visit count
+alias visitors='echo $(($(cat $HOME/visitors | awk -F "," '{print NF-1}') + 1))'
+alias visits='echo $(cat $HOME/visits)'
